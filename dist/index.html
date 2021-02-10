@@ -6,7 +6,7 @@
     <title>West Hills | Home</title>
     <link rel="stylesheet" href="./src/tailwind.css">
 </head>
-<body>
+<body class="bg-black w-full">
     <main class="w-full h-screen bg-black">
         <nav class="w-9/12 md:w-3/5 mx-auto pt-10 sm:pt-6 ">
             <ul class="list-none flex justify-between sm:justify-start">
@@ -21,7 +21,7 @@
             <p class="font-sans text-lg text-white text-center pt-4">Enter 8 numbers (0-9) to determine each building's height. Buildings that can see the sunset in the west (left) will be green, while the others will be gray.</p>
         </div>
 
-        <div class="w-4/5 md:w-1/2 h-1/2 mx-auto flex py-2 md:mt-24 items-end justify-between" id="game-container">
+        <div class="w-full lg:w-1/2 h-1/2 mx-auto flex py-2 md:mt-24 items-end justify-between" id="game-container">
             <div>
                 <div id="building1" class="w-16 bg-green-600" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
                 <div class="mx-auto" style="width: fit-content">
@@ -64,14 +64,14 @@
                 </div>
             </div>
 
-            <div>
+            <div class="hidden sm:block">
                 <div id="building7" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
                 <div class="mx-auto" style="width: fit-content">
                     <input type="number" max="9" min="0" id="input7" class="w-12 h-12 rounded-full text-center border-none">
                 </div>
             </div>
 
-            <div>
+            <div class="hidden sm:block">
                 <div id="building8" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
                 <div class="mx-auto" style="width: fit-content">
                     <input type="number" max="9" min="0" id="input8" class="w-12 h-12 rounded-full text-center border-none">
@@ -79,6 +79,7 @@
             </div>
         </div>
     </main>
+
 
     <script src="./src/main.js"></script>
 </body>
