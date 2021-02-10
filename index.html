@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Hills | Home</title>
+    <link rel="stylesheet" href="src/tailwind.css">
+</head>
+<body>
+    <main class="w-full h-screen bg-black">
+        <nav class="w-9/12 md:w-3/5 mx-auto pt-10 sm:pt-6 ">
+            <ul class="list-none flex justify-between sm:justify-start">
+                <li class="font-sans text-lg text-white mx-6 pb-3 px-2 border-b-2">Home</li>
+                <a href="code.html"><li class="font-sans text-lg text-white mx-6 pb-4 px-2 cursor-pointer hover:text-gray-400">Code</li></a>
+                <a href="https://github.com/PedroEnciso/westHillsFullSite" target="_blank"><li class="font-sans text-lg text-white mx-6 pb-4 px-2 cursor-pointer hover:text-gray-400">Git</li></a>
+            </ul>
+        </nav>
+
+        <div class="w-4/5 md:w-1/2 mx-auto pt-16">
+            <h1 class="font-sans text-5xl text-white text-center">The West Hills</h1>
+            <p class="font-sans text-lg text-white text-center pt-4">Enter 8 numbers (0-9) to determine each building's height. Buildings that can see the sunset in the west (left) will be green, while the others will be gray.</p>
+        </div>
+
+        <div class="w-4/5 md:w-1/2 h-1/2 mx-auto flex py-2 md:mt-24 items-end justify-between" id="game-container">
+            <div>
+                <div id="building1" class="w-16 bg-green-600" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input1" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building2" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input2" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building3" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input3" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building4" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input4" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building5" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input5" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building6" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input6" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building7" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input7" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+
+            <div>
+                <div id="building8" class="w-16 bg-gray-400" style="height: 35px; margin-bottom:-60px; transition: .3s"></div>
+                <div class="mx-auto" style="width: fit-content">
+                    <input type="number" max="9" min="0" id="input8" class="w-12 h-12 rounded-full text-center border-none">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
